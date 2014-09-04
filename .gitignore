@@ -1,2 +1,4 @@
 /M2/build/
 M2/nbproject/private/private.xml
+*.properties
+*.properties
