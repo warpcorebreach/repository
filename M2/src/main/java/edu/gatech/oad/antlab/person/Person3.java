@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.*;
 /**
  *  A simple class for person 3
  *  returns their name and a
@@ -43,6 +44,18 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+		Stack<Character> s = new Stack<>();
+                Deque<Character> q = new LinkedList<>();
+		for(int i = 0; i < input.length(); i++){
+			s.push(input.charAt(i));
+		}
+		while(!s.isEmpty()) {
+			q.add(s.pop());
+		}
+		String done = "";
+		while(!q.isEmpty()) {
+			done = done + q.poll();
+		}
+	  return done;
 	}
 }
