@@ -1,0 +1,13 @@
+//apply plugin 'java'
+//Define the contents of the jar file
+jar{
+	manifest {
+	     sttributes 'Main-Class': 'edu.gatech.oad.antlab.pk1.AntLabMain'
+	     attrubutes 'Class-Path': '../../lib/resources.jar'
+
+	}
+}
+
+dependencies {
+	compile files('lib/resources.jar')
+}
